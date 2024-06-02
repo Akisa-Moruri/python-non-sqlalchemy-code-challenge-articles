@@ -82,7 +82,7 @@ class Author:
         if not isinstance(value, str) or len(value) == 0:
             raise ValueError(f"{field_name} must be a non-empty string")
         return value
-
+    
 
 class Magazine:
     all = []
@@ -154,3 +154,4 @@ class Magazine:
         if not (min_len <= len(value) <= max_len):
             raise ValueError(f"{field_name} must be between {min_len} and {max_len} characters")
         return value
+    
